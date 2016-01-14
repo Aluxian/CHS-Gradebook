@@ -1,0 +1,21 @@
+<div ng-include="'views/navbar.html'"></div>
+
+<div class="container">
+  <div class="well">
+    <div class="well_h">
+      <h3>My Students ({{students.length}})</h3>
+    </div>
+
+    <accordion ng-show="students">
+      <accordion-group heading="{{student.name}} ({{student.classrooms.length}})" ng-repeat="student in students">
+        <div class="list-group" ng-show="student.classrooms">
+          <a href="#/parent/classroom/{{student.id}}/{{cr.id}}" class="list-group-item" ng-repeat="cr in student.classrooms">{{cr.name}}</a>
+        </div>
+
+        <p class="text-muted" ng-hide="student.classrooms">This student hasn't been added to any classrooms yet.</p>
+      </accordion-group>
+    </accordion>
+
+    <p class="well_not text-muted" ng-hide="students">You haven't been added by any student. Ask yours to add you as a parent!</p>
+  </div>
+</div>

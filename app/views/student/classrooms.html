@@ -1,0 +1,17 @@
+<div ng-include="'views/navbar.html'"></div>
+
+<div class="container">
+  <div class="well">
+    <div class="well_h">
+      <h3>My Classrooms ({{classrooms.length}})</h3>
+    </div>
+
+    <ul class="well_lg list-group" ng-show="classrooms">
+      <li class="cr list-group-item" ng-repeat="cr in classrooms">
+        <a ng-href="#/student/classroom/{{cr.id}}" class="cr_name">{{cr.name}}</a>
+      </li>
+    </ul>
+
+    <p class="well_not text-muted" ng-hide="classrooms">You haven't been added to any classrooms. You need to wait for you teacher to add you to a classroom!</p>
+  </div>
+</div>

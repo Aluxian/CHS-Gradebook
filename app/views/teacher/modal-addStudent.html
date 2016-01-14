@@ -1,0 +1,24 @@
+<form class="modal_form" role="form" ng-submit="addStudent()">
+  <div class="modal-header">
+    <h3>Add Student</h3>
+  </div>
+
+  <div class="modal-body">
+    <p class="text-danger" ng-show="error">{{error}}</p>
+
+    <div class="form-group">
+      <label class="control-label" for="input_name">Name</label>
+      <input type="text" class="form-control" ng-model="student.name" id="input_name" placeholder="John Studentson" required autofocus>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="input_email">Email Address</label>
+      <input type="email" class="form-control" ng-model="student.email" id="input_email" placeholder="john@edu.com" required>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary" ng-class="{'disabled': addText === 'Adding...'}">{{addText}}</button>
+    <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  </div>
+</form>

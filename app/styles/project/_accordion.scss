@@ -1,0 +1,13 @@
+accordion {
+  .panel-group .panel + .panel {
+    margin-top: 10px;
+  }
+
+  .text-muted {
+    margin-bottom: 0;
+  }
+
+  .list-group {
+    margin-bottom: 0;
+  }
+}

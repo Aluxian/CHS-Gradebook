@@ -1,0 +1,21 @@
+<div class="container">
+  <form class="form-signin" role="form" ng-submit="signUp()">
+    <h2 class="form-signin-heading">Sign up</h2>
+
+    <select class="form-control" ng-model="user.type" required autofocus>
+      <option value="" default selected>I am a ...</option>
+      <option value="teacher">Teacher</option>
+      <option value="student">Student</option>
+      <option value="parent">Parent</option>
+    </select>
+
+    <div>
+      <input type="text" class="form-control" ng-model="user.name" placeholder="Name" required>
+      <input type="email" class="form-control" ng-model="user.email" placeholder="Email address" required>
+      <input type="password" class="form-control" ng-model="user.password" placeholder="Password" required>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    <a class="pull-right" href="#/signin">Already have an account?</a>
+  </form>
+</div>

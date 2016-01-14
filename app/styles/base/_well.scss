@@ -1,0 +1,142 @@
+.well {
+  background-color: #fff;
+
+  .well_h {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    h3 {
+      margin: 0;
+      display: inline-block;
+    }
+
+    .pull-right {
+      height: 24px;
+      margin-top: 2px;
+    }
+  }
+
+  .well_lg {
+    margin-bottom: 10px;
+
+    &.__student {
+      margin-top: 15px;
+
+      .badge {
+        font-size: 20px;
+      }
+    }
+
+    .list-group-item {
+      font-size: 18px;
+      font-weight: 600;
+
+      a:not(:hover) {
+        color: inherit;
+      }
+
+      &:hover {
+        background-color: #fcfcfc;
+
+        .cr_right {
+          opacity: 1;
+        }
+      }
+    }
+
+    .label:first-child {
+      margin-right: 5px;
+    }
+
+    .cr {
+      .cr_name {
+        text-decoration: none;
+      }
+
+      .cr_badge {
+        float: none;
+        height: 19px;
+        margin-top: 4px;
+        margin-left: 5px;
+        vertical-align: top;
+      }
+
+      .cr_right {
+        opacity: 0;
+        transition: opacity 0.1s;
+      }
+    }
+  }
+
+  .well_not {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.well.__classroom {
+  padding-top: 10px;
+
+  .well_h {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+
+  .nav {
+    float: right;
+  }
+
+  .tab-content {
+    padding-top: 50px;
+
+    .tabbable {
+      min-height: 300px;
+
+      .table_container {
+        width: 100%;
+        max-height: 416px;
+        overflow-y: scroll;
+
+        table {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .nav {
+      float: left;
+      max-width: 130px;
+      margin-top: 10px;
+      padding-right: 15px;
+      border-right: 1px solid #E6E6E6;
+    }
+
+    .tab-content {
+      display: inline-block;
+      width: calc(100% - 100px);
+      padding: 10px 0 0 15px;
+    }
+
+    .col-md-6:not(:last-child) {
+      padding-left: 0;
+      padding-right: 10px;
+
+      @media screen and (max-width: 991px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .col-md-6:last-child {
+      padding-left: 10px;
+      padding-right: 0;
+
+      @media screen and (max-width: 991px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

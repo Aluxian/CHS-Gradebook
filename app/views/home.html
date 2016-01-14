@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li><a ng-href="/">Home</a></li>
+      <li ng-hide="user"><a ng-href="#/signin">Sign in</a></li>
+      <li ng-hide="user"><a ng-href="#/signup">Register</a></li>
+      <li ng-show="user"><a ng-href="#{{dashboardUrl}}" title="To your dashboard"><i>{{user.name}}</i></a></li>
+    </ul>
+    <h3 class="text-muted"><a href="/">Gradebook</a></h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Ready, Set, Mark!</h1>
+    <p class="lead">Gradebook is a super simple website, for students and parents to view marks, and for teachers to manage entire classrooms!</p>
+    <p>
+      <a class="btn btn-lg btn-success" ng-show="user" ng-href="#{{dashboardUrl}}">Go to your dashboard »</a>
+      <a class="btn btn-lg btn-success" ng-hide="user" ng-href="#/signup">Create an account »</a>
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Easy</h2>
+      <p>We've partnered with the greatest High Schools to gather feedback from students, parents and teachers. We made using Gradebook a breeze!</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Useful</h2>
+      <p>We know that a teacher's biggest aim is to teach. We want to help them focus on teaching, rather than losing time on grading.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Beautiful</h2>
+      <p>With a carefully crafted interface and attention to details, we hope you'll enjoy using Gradebook as much as we enjoyed bulding it.</p>
+    </div>
+  </div>
+
+  <div class="well how-it-works">
+    <h1>How it Works</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Teachers</h2>
+      <p>Sign up, add students, and you're ready to go! You can manage your classrooms, assign grades online and track your students' attendance.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Students</h2>
+      <p>Just sign up! You'll see the classrooms teachers have added you into on your dashboard. Your grades are one click away.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Parents</h2>
+      <p>We know how smart your children are. But if you need any proof, then you can check out their grades online, any time.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Programmed with &hearts; by <a href="http://www.aluxian.com/">Alexandru Rosianu</a> for the CreateHS February <a href="http://www.createhs.com/challenge">challenge</a>.</p>
+  </div>
+</div>
